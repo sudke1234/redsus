@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500&family=Prompt:wght@600;700;900&display=swap');
+
+
+.center{
+	display : flex;
+	justify-content : center;
+	align-items : center;
+}
+
+
+:root {
+	--main-logo : url(resource/sp_gnb.svg) no-repeat;
+	--child1-logo : url(resource/bg_sprite_lstico.png) no-repeat;
+	--child2-logo : url(resource/sp_gnb.png) no-repeat;
+	--main-width : 980px;
+	--margin : 5px;
+}
+*{
+	margin : 0px;
+	padding : 0px;
+	text-decoration : none;
+	box-sizing : border-box;
+}
+body{
+	width : 100vw;
+	height : 100vh;
+}
+.viewframe{
+	width : 100%;
+	height : 100%;
+
+	display : flex;
+	flex-direction : column;
+}
+
+
+.space_header{
+	/* border : 2.1px solid green; */
+	width : 100%;
+	height : 114px;
+
+	display : flex;
+	flex-direction : column;
+}
+	.space_header > .space_main{
+		/* border : 2.1px solid green; */
+		width : 100%;
+		height : 63px;
+
+		border-bottom : 1px solid #ddd;
+
+		display : flex;
+		justify-content : center;
+	}
+		.space_header > .space_main > .content_main{
+			/* border : 2.1px dotted green; */
+			min-width : var(--main-width);
+			height : 100%;
+
+			display : flex;
+		}
+			.content_main>.box_brandlogo{
+				/* border : 2.1px dotted red; */
+				width : auto;
+				height : 100%;
+
+				color : #00c73c;
+				font-family : 'Prompt', 'Franklin Gothic Medium';
+				font-size : 16.5px;
+				font-weight : 900;
+				line-height: 0px;
+				white-space: nowrap;
+
+				display : flex;
+				align-items : center;
+			}
+			.content_main>.box_servicelogo{
+				/* border : 2.1px dotted red; */
+				width : auto;
+				height : 100%;
+
+				padding : 0px 5px;
+
+				font-family : 'Gothic A1', Arial;
+				font-weight : 500;
+				font-size : 20.5px;
+				line-height : 0px;
+				white-space: nowrap;
+        
+				display : flex;
+				align-items : center;
+			}
+			.content_main>.box_search{
+				/* border : 2.1px dotted red; */
+				width : 263px;
+				height : 100%;
+
+				margin : 0px 10px;
+
+				display : flex;
+				align-items : center;
+			}
+				.box_search>.box_outer{
+					/* border : 2.1px dotted red; */
+					width : 262px;
+					height : 33px;
+
+					border : 1px solid #00ab4c;
+
+					display : flex;
+				}
+					.box_outer>.space_input{
+						/* border : 2.1px solid green; */
+						height : 100%;
+
+						display : flex;
+            flex-grow : 1;
+					}
+						.space_input>.content_input{
+							/* border : 2.1px dotted green; */
+							width : 100%;
+							height : 100%;
+							position : relative;
+
+							padding : 6px 0px 6px 8px;
+
+							display : flex;
+						}
+							.content_input>.item_input{
+								/* border : 2.1px dotted red; */
+								width : 100%;
+								height : 100%;
+
+								border : none;
+
+								flex-grow : 1;
+							}
+							.content_input>.item_historybtn{
+								/* border : 2.1px dotted blue; */
+								width : max-content;
+								height : 100%;
+
+								position : absolute;
+								top : 0px;
+								right : 0px;
+								
+								color : #00ab4c;
+								font-size : 14px;
+
+								display : flex;
+								align-items : center;
+
+								cursor : pointer;
+							}
+					.box_outer>.space_searchbtn{
+						/* border : 2.1px solid green; */
+						height : 100%;
+
+						display : flex;
+						align-items : center;
+					}
+						.space_searchbtn>.item_searchico{
+							/* border : 2.1px dotted blue; */
+							width : 15px;
+							height : 15px;
+
+							margin : 10px;
+
+							background : var(--main-logo);
+							background-position : 0px -52px;
+
+							cursor : pointer;
+						}
+			.content_main>.box_speaker{
+				/* border : 2.1px dotted red; */
+				height : 100%;
+
+				padding : 0px var(--margin);
+
+				display : flex;
+				align-items : center;
+			}
+				.box_speaker>.item_speakerico{
+					/* border : 2.1px dotted red; */
+					width : 12px;
+					height : 12px;
+
+					background : var(--main-logo);
+					background-position : -15px -52px;
+				}
+			.content_main>.box_expertnotice{
+				/* border : 2.1px dotted red; */
+				height : 100%;
+
+				display : flex;
+				align-items : center;
+			}
+				.box_expertnotice>.item_notice{
+					/* border : 2.1px dotted blue; */
+					color : #00c73c;
+					font-size : 13px;
+				}
+			.content_main>.content_rightspace{
+				/* border : 2.1px dotted green; */
+				height : 100%;
+
+				display : flex;
+				flex-grow : 1;
+				justify-content : flex-end;
+			}
+				.content_rightspace>.box_expertlogo{
+					/* border : 2.1px dotted red; */
+					height : 100%;
+
+					padding : 0px var(--margin);
+
+					display : flex;
+					align-items : center;
+				}
+					.box_expertlogo>.item_expertico{
+						/* border : 2.1px dotted blue; */
+						width : 74px;
+						height : 23px;
+
+						background : var(--main-logo);
+						background-size : 150%;
+						background-position : 0px -42px;
+					}
+				.content_rightspace>.box_expertchat{
+					/* border : 2.1px dotted red; */
+					height : 100%;
+
+					padding : 0px var(--margin);
+
+					display : flex;
+					align-items : center;
+				}
+					.box_expertchat>.item_chatico{
+						/* border : 2.1px dotted blue; */
+						width : 24px;
+						height : 24px;
+
+						background : var(--main-logo);
+						background-position : -61px 0px;
+					}
+				.box_expertpa>.item_hr{
+					width : 1px;
+					height : 15px;
+					padding: 18px;
+					margin : auto 10px;
+					
+					background-color : #eee;
+				}
+				.content_rightspace>.box_login,
+				.content_rightspace>.box_apps{
+					/*border : 2.1px dotted red;*/
+					height : 100%;
+
+					padding : 0px var(--margin);
+					
+					display : flex;
+					align-items : center;
+				}
+					.box_login>.box_text{
+						
+					
+						background-color: white;
+						border : 1px solid #ddd;
+
+						color : #666;
+						font-size : 12px;
+					}
+					.box_apps>.item_appsico{
+						/* border : 2.1px dotted blue; */
+						width : 16px;
+						height : 16px;
+
+						background : var(--child2-logo);
+						background-position : -2px -130px;
+					}
+
+	.space_header > .space_menu{
+		/* border : 2.1px solid rgb(228, 228, 228); */
+		width : 100%;
+		height : 59px;
+		margin: auto;
+		border-bottom : 1px solid #ddd;
+
+		display : flex;
+		justify-content : center;
+	}
+		.space_header > .space_menu > .content_menu{
+			/*border : 2.1px  green;*/
+			width : var(--main-width);
+			height : 100%;
+
+			display : flex;
+		}
+		
+		.content_menu>.content_menus{
+				height : 100%;
+				display : flex;
+				flex-grow : 1;
+				justify-content : space-between;
+			}
+		.content_menus>.box_text {
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+		.content_menus>.selected{
+			color: #00ab4c;
+			border-width: 0 0 2px 0;
+			border-color: #00ab4c;
+			border-style: solid;
+
+		}
+		.content_menus>.checked{
+			padding-left: 10%;
+			padding-bottom: 10%;
+			width : 1px;
+						height : 15px;
+
+						margin : auto 0px;
+						
+						background-color : #c8cbcd;
+		}
+			/*css 빈칸2 contents menus의 메뉴바에 맞게 작성해보자	
+					** item_hr은 메뉴바의 섹션을 구분하려는 코드로 그대로 주석만 풀어서 사용하면 됩니다
+			*/		.content_menus>.item_hr{
+						width : 1px;
+						height : 15px;
+
+						margin : auto 0px;
+						
+						background-color : #c8cbcd;
+					}
+					
+			/* css빈칸3 질문하기를 만들어보자*/
+			
+.question_section{
+	padding-left: 8%;
+}
+
+.question_box>.pen_ico{
+	width: 15px;
+	height: 13px;
+	background: var(--main-logo);
+	background-position: -61px -39px;
+}
+.question_box>.text{
+	color: white;
+	font-size: small;
+	text-align: center;
+	
+}
+.question_box{
+	width: 116px;
+	height: 52px;
+	justify-content: center;
+	background-color: #00ab4c;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
