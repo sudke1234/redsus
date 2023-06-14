@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    margin-left: 260px;
+}
+.expalin{
+    text-align: center;
+}
