@@ -1,17 +1,91 @@
 <!DOCTYPE html>
-<html lang="kor">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title><!--math객채 == 간단수학-->
+    <script>
+
+        const dog={
+            name : '찹싸이',
+            age : '34'
+        }
+        const cat={
+            name : '울먹이',
+            actor : 'cat1',
+            personal : 'happy'
+        }
+        const pig={
+            name : '노진구',
+            actor : 'doyoou'
+        }
+        console.log(`울 강아지 이름은 ${dog.name}이고, 나이는 ${dog.age}라고 ㅋㅋ`);
+        console.log(`내 고양이 이름은 ${cat.name}이고, 지금 상태는 ${cat.personal}하다고 ㅋㅋ`);
+        console.log(`내 아기 돼지 이름은 ${pig.name}이고, 지금운  ${pig.actor}하다고 ㅋㅋ`);
+        console.log(cat);
+        console.log(pig);
+        
+        Math.round(11.5);
+
+    </script>
 </head>
 <style>
-    *{
-        margin: 0px;    
+    #pen{
+        width: 10px;
+        height: 10px;
+
+        position: fixed;
+
+        background-color: red;
+
+        border-radius:  100%;
     }
 </style>
 <body>
-    
+    <div id="pen"></div>
 </body>
+<script>
+    let x = 0;
+    let y = 0;
+    let count = 0;
+    const PEN = document.querySelector("#pen");
+
+    console.log(PEN.attributes);
+
+    setInterval(
+        function(){
+            x = (Math.cos(count)+1)*100 * (Math.cos(count)-1)+100 ;
+            y =(Math.sin(count)+1)*100 * (Math.cos(count)+1)+100;
+            count += 0.05;
+
+            PEN.style.left = `${x}px`;
+            PEN.style.top = `${y}px`;
+
+            document.body.appendChild(
+                PEN.cloneNode()
+            );
+        },10//0.01초씩 돌려짐
+
+    );
+        
+/*
+    setInterval(
+        function(){
+            x = (Math.cos(count)+1)*100;
+            y =(Math.sin(count)+1)*100;
+            count += 0.05;
+
+            PEN.style.left = `${x}px`;
+            PEN.style.top = `${y}px`;
+
+            document.body.appendChild(
+                PEN.cloneNode()
+            );
+        },10
+
+    );
+        
+   */
+</script>
 </html>
